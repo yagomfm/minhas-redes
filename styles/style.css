@@ -91,14 +91,14 @@ main img.pq {
 aside {
     position: relative;
     margin: auto;
-    background-color: var(--cor1);
+    background-color: var(--cor3);
     border-radius: 10px;
     padding: 10px;
     margin-top: 10px;
 }
 aside > h2 {
     color: black;
-    background-color: var(--cor2);
+    background-color: var(--cor4);
     border-radius: 10px 10px 0px 0px;
     margin: -10px -10px 10px -10px;
     padding: 8px;
@@ -121,9 +121,4 @@ aside img:hover {
     width: 10%;
     position: static;
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);border-radius: 10px;
-}
-
-footer {
-    background-color: black;
-    margin-top: 50px;
 }
