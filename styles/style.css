@@ -18,7 +18,8 @@
 }
 body {
     font-family: var(--fonte1);
-    background-color: var(--cor0);
+    background: transparent url('../imagens/wallpaper.jpg') center center no-repeat fixed;
+    background-size: cover;
 }
 .linha {
     display: flex;
