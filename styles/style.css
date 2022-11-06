@@ -82,39 +82,6 @@ main img.pq {
     margin: auto;
 }
 
-table {
-    border-collapse: collapse;
-    position: relative;
-    margin: auto;
-    font-family: var(--font1);
-    color: black;
-    font-size: 2vh;
-}
-table > caption {
-    font-size: 2.5vh;
-    font-weight: bold;
-    padding: 20px;
-    text-align: center;
-}
-th {
-    background-color: #838383;
-    color: white;
-    font-weight: bold;
-    border: 1px solid black;
-    padding: 10px;
-}
-td {
-    border: 1px solid black;
-    padding: 10px;
-
-}
-td.ano {
-    text-align: right;
-}
-tr:nth-child(even) {
-    background-color: rgb(228, 228, 228);
-}
-
 aside {
     position: relative;
     margin: auto;
@@ -149,8 +116,14 @@ aside a {
     text-decoration: none;
     color: var(--cor5);
 }
-aside img:hover {
-    width: 10%;
-    position: static;
-    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);border-radius: 10px;
+
+.img-icones {
+    border-radius: 50%;
+    position: sticky;
+}
+.img-icones:hover {
+    border: 2px solid rgba(255, 255, 255, 0.307);
+    transform: translate(-3px, 3px);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.426);
+    transition: transform .2s, border .2s;
 }
