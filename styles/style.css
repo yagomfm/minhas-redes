@@ -24,7 +24,7 @@ body {
 
 header{
     text-align: center;
-    background-image: linear-gradient(to top, var(--cor5), var(--cor3));
+    background-image: linear-gradient(to right,  var(--cor5), var(--cor3));
     padding: 20px;
     box-shadow: 3px 0px 10px rgba(0, 0, 0, 0.5);
     margin: auto;
@@ -110,13 +110,6 @@ aside > h2 {
     text-align: center;
     border-bottom: 1px solid black;
 }
-aside > ul {
-    display: flex;
-    flex-flow: column nowrap;
-    list-style-position: inside;
-    list-style-type: none;
-    line-height: 3em;
-}
 aside p {
     text-align: center;
     text-indent: 0em;
@@ -126,9 +119,16 @@ aside a {
     color: var(--cor5);
 }
 
+.link-icons {
+    columns: 2;
+    list-style-position: inside;
+    list-style-type: none;
+    line-height: 3em;
+    gap: 10px;
+}
 .img-icones {
     border-radius: 50%;
-    position: sticky;
+    position: relative;
 }
 .img-icones:hover {
     border: 2px solid rgba(255, 255, 255, 0.307);
@@ -137,7 +137,7 @@ aside a {
     transition: transform .2s, border .2s;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
     .content {
         flex-direction: column;
     }
@@ -148,5 +148,10 @@ aside a {
     .img-content {
         width: 100%;
         height: auto;
+    }
+    .link-icons {
+        columns: 1;
+        display: flex;
+        flex-flow: column nowrap;
     }
 }
