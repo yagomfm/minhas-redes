@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
-    --cor0: #ebe5c52e;
+    --cor0: #252525;
     --cor1: #0CF8E1;
     --cor2: #0BB6D9;
     --cor3: #0088F0;
@@ -24,7 +24,7 @@ body {
 
 header{
     text-align: center;
-    background-image: linear-gradient(to right,  var(--cor5), var(--cor3));
+    background-image: linear-gradient(to right, var(--cor5) , var(--cor3));
     padding: 20px;
     box-shadow: 3px 0px 10px rgba(0, 0, 0, 0.5);
     margin: auto;
@@ -57,7 +57,7 @@ main {
     padding: 20px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
 }
 
 main h2 {
@@ -120,7 +120,10 @@ aside a {
 }
 
 .link-icons {
-    columns: 2;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
     list-style-position: inside;
     list-style-type: none;
     line-height: 3em;
@@ -150,8 +153,6 @@ aside a {
         height: auto;
     }
     .link-icons {
-        columns: 1;
-        display: flex;
-        flex-flow: column nowrap;
+        display: block;
     }
 }
