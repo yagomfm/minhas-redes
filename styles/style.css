@@ -120,14 +120,14 @@ aside a {
 }
 
 .link-icons {
-    display: flex;
-    flex-flow: row nowrap;
     align-items: center;
-    justify-content: center;
-    list-style-position: inside;
-    list-style-type: none;
+    justify-content: space-around;
     line-height: 3em;
     gap: 10px;
+}
+.link-icons, .link-1, .link-2 {
+    display: flex;
+    flex-flow: row nowrap;
 }
 .img-icones {
     border-radius: 50%;
@@ -135,10 +135,14 @@ aside a {
 }
 .img-icones:hover {
     border: 2px solid rgba(255, 255, 255, 0.307);
-    transform: translate(-3px, 3px);
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.426);
+    transform: translate(-3px, 3px);
     transition: transform .2s, border .2s;
 }
+.link-1 > p, .link-2 > p {
+    padding-left: 10px;
+}
+
 
 @media only screen and (max-width: 700px) {
     .content {
